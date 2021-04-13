@@ -35,3 +35,12 @@ window.addEventListener('scroll', _.throttle(function(){//lodash.js를 통해 �
   }
 },300));//window == 브라우저 창
 // _.throttle(함수,시간_밀리세컨드)
+
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(function(fadeEl, index){
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .7, // 0.7, 1.4, 2.1, 2.8
+    opacity: 1
+  });
+});

@@ -26,9 +26,45 @@
   <!-- Google Fonts 적용 (main.css보다 먼저 선언함)-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/main.css" />
+  <!-- JS 연결 -->
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
-  Hello World!
+  
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      
+      <a href="/" class="logo">
+        <img src="./images/starbucks_logo.png" alt="STARBUCKS">
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">Sing in</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">My Starbucks</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Customer Service & Ideas</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Find a Store</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" />
+          <div class="material-icons">search</div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  
 </body>
 </html>

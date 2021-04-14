@@ -51,3 +51,21 @@ new Swiper('.notice-line .swiper-container', {
   autoplay: true,
   loop: true
 });
+new Swiper('.promotion .swiper-container', {
+  // direction: 'horizontal' 기본값이라 명시필요 없음
+  slidesPerView: 3, // 한번에 보여줄 슬라이드 갯수
+  spaceBetween: 10, // 슬라이드 사이 여백
+  centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 5000 // 5000밀리세컨
+  // }
+  pagination: {
+    el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next'
+  }
+});
